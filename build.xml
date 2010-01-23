@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="gwt-styles" default="build" basedir=".">
+	<!-- Configure path to GWT SDK -->
+	<property name="gwt.sdk" location="c:/devel/gwt-0.0.0" />
+	<property name="module.name"  value="${ant.project.name}"/>
+	<property name="jarfile.name" value="${module.name}.jar"/>
+  	<property name="src"          location="src"/>
+    <property name="lib"     	  location="lib"/>
+    <property name="build"        location="build"/>
+  	<property name="dist"         location="dist"/>
+	<property name="temp"     	  location="temp"/>
+  	<property name="dist.root"    value="${dist}/${module.name}"/>
+
+	<path id="project.class.path">
+		<pathelement location="build" />
+		<pathelement location="${gwt.sdk}/gwt-user.jar" />
+		<fileset dir="${gwt.sdk}" includes="gwt-dev*.jar" />
+	</path>
+	
+	<target name="clean" description="Cleans this project">
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+		<delete dir="${temp}"/>
+	</target>
+			
+    <target name="init" depends="clean" description="Create folders">
+    	<mkdir dir="${build}"/>
+    	<mkdir dir="${dist}"/>
+    	<mkdir dir="${temp}"/>
+    </target>
+	
+	<target name="copy.scr" depends="init" description="Copy source to output folder">
+		<copy todir="${temp}">
+			<fileset dir="${src}" />
+		</copy>
+	</target>
+
+	<target name="build" depends="copy.scr" description="Build this project">
+		<jar destfile="${build}/${module.name}.jar" basedir="temp" />
+	</target>
+
+	<target name="jar" depends="build" description="Create a jar file">
+		<copy file="${build}/${module.name}.jar" todir="${dist}"/>
+		<delete dir="${temp}"/>
+	</target>
+
+</project>

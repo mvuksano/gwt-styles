@@ -1,0 +1,53 @@
+.gwt-TabLayoutPanelTab, 
+.gwt-TabLayoutPanelTab-selected { 
+  position: relative; 
+  height: 26px; 
+  width: 8em; 
+  margin-left: -16px; 
+} 
+
+.gwt-TabLayoutPanelTab .gwt-TabLayoutPanelTabInner, 
+.gwt-TabLayoutPanelTab-selected .gwt-TabLayoutPanelTabInner { 
+  height: 26px; 
+  padding-left: 15px; 
+} 
+
+.gwt-TabLayoutPanelTab { 
+  background: url(images/tab-inactive-left.png) no-repeat bottom left; 
+} 
+
+.gwt-TabLayoutPanelTab .gwt-TabLayoutPanelTabInner { 
+  background: url(images/tab-inactive-right.png) no-repeat bottom right; 
+} 
+
+.gwt-TabLayoutPanelTab-selected { 
+  background: url(images/tab-active-left.png) no-repeat bottom left; 
+  z-index: 1; 
+} 
+
+.gwt-TabLayoutPanelTab-selected .gwt-TabLayoutPanelTabInner { 
+  background: url(images/tab-active-right.png) no-repeat bottom right; 
+} 
+
+.gwt-TabLayoutPanelTabs { 
+  background: url(images/tabs-bg.png) repeat-x bottom; 
+  padding-left: 2em; 
+  margin-left: 2px; 
+  margin-right: 4px; 
+}
+
+.gwt-TabLayoutPanelTabInner div { 
+  color: #444; 
+  padding-top: 6px; 
+  font-weight: bold; 
+  height: 26px; 
+  margin-right: 15px; 
+} 
+
+.gwt-TabLayoutPanelTab .gwt-TabLayoutPanelTabInner div { 
+  background: url(images/tab-inactive-center.png) repeat-x top; 
+} 
+
+.gwt-TabLayoutPanelTab-selected .gwt-TabLayoutPanelTabInner div { 
+  background: url(images/tab-active-center.png) repeat-x top; 
+} 

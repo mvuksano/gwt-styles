@@ -687,43 +687,10 @@ img.alignright, img.right {margin: 0 0 1em 1.5em;}
    GWT DatePicker
 ------------------------------------------------------------------- */
 .gwt-DatePicker {  width: 17em; padding: .2em .2em 0; }
-.datePickerMonthSelector {  
-	background: #DDDDDD url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) repeat-x scroll 50% 50%;
-	position:relative; 
-	padding:.2em 0; 
-	margin-bottom: 0px;
-}
+.datePickerMonthSelector {  position:relative; padding:.2em 0; }
 .datePickerMonth { text-align: center; }
-.datePickerPreviousButton { 
-	background: url(images/ui-icons_0073ea_256x240.png);
-	background-position: -80px -192px;
-	height: 15px;
-	width: 9px;  
-}
-.datePickerPreviousButton-up-hovering { 
-	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
-	background-position: -80px -192px;
-	height: 15px;
-	width: 9px;
-}
-.datePickerPreviousButton .html-face {
-	display:none;
-}
-.datePickerNextButton {
-	background: url(images/ui-icons_0073ea_256x240.png); 
-	background-position: -48px -192px;
-	height: 15px;
-	width: 9px;
-}
-.datePickerNextButton-up-hovering {
-	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
-	background-position: -48px -192px;
-	height: 15px;
-	width: 9px;
-}
-.datePickerNextButton .html-face {
-	display:none;
-}
+.datePickerPreviousButton {  }
+.datePickerNextButton {  }
 .datePickerDays { width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
 .datePickerWeekdayLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }
 .datePickerWeekendLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }

@@ -724,17 +724,49 @@ img.alignright, img.right {margin: 0 0 1em 1.5em;}
 .datePickerNextButton .html-face {
 	display:none;
 }
-.datePickerDays { width: 100%; font-size: .9em; border-collapse: collapse; margin:0 0 .4em; }
+.datePickerDays { 
+	width: 100%;
+	font-size: .9em;
+	border-collapse: separate;
+	margin:0 0 .4em;
+	border-spacing: 2px;
+}
 .datePickerWeekdayLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }
 .datePickerWeekendLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }
-.datePickerDay {  }
+.datePickerDay {
+	border:0 none;
+	padding:0.5em;
+	background:#F6F6F6 url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) repeat-x scroll 50% 50%;
+	border:1px solid #DDDDDD;
+	color:#0073EA;
+	font-weight:bold;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+}
 .datePickerDayIsToday {  }
 .datePickerDayIsWeekend {  }
 .datePickerDayIsFiller {  }
 .datePickerDayIsValue {  }
 .datePickerDayIsDisabled {  }
-.datePickerDayIsHighlighted {  }
-.datePickerDayIsValueAndHighlighted {  }
+.datePickerDayIsHighlighted {
+	background:#0073EA url(images/ui-bg_highlight-soft_25_0073ea_1x100.png) repeat-x scroll 50% 50%;
+	border:1px solid #0073EA;
+	color:#FFFFFF;
+	font-weight:bold;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium; 
+}
+.datePickerDayIsValueAndHighlighted {
+	background:#FFFFFF url(images/ui-bg_glass_65_ffffff_1x400.png) repeat-x scroll 50% 50%;
+	border:1px solid #DDDDDD;
+	color:#FF0084;
+	font-weight:bold;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+}
 
 /* 
    GWT Toggle Button

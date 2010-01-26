@@ -1,0 +1,372 @@
+/**
+ * The file contains styles for GWT widgets in the standard theme.
+ *
+ * In order to maintain cross-browser compatibility, the following syntax is
+ * used to create IE6 specific style rules:
+ *    .gwt-Widget {
+ *      property: rule applies to all browsers
+ *      -property: rule applies only to IE6 (overrides previous rule)
+ *    }
+ *    * html .gwt-Widget {
+ *      property: rule applies to all versions of IE
+ *    }
+ */
+
+body, table td, select {
+  font-family: Arial Unicode MS, Arial, sans-serif;
+  font-size: 11pt%;
+}
+pre {
+  font-family: "courier new", courier;
+  font-size: small;
+}
+body {
+  color: black;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  background: #fff;
+  direction: ltr;
+}
+a, a:visited, a:hover {
+  color: #0000AA;
+}
+
+/**
+ * The reference theme can be used to determine when this style sheet has
+ * loaded.  Create a hidden div element with absolute position, assign the style
+ * name below, and attach it to the DOM.  Use a timer to detect when the
+ * element's height and width are set to 5px.
+ */
+.gwt-Reference-standard {
+  height: 5px;
+  width: 5px;
+  zoom: 1;
+}
+
+/* 
+   GWT Panels
+------------------------------------------------------------------- */
+
+/* 
+   GWT Button
+------------------------------------------------------------------- */
+.gwt-Button {
+}
+
+/* 
+   GWT Push Button
+------------------------------------------------------------------- */
+
+.gwt-PushButton-up {
+}
+.gwt-PushButton-down {
+}
+.gwt-PushButton-up-hovering {
+}
+.gwt-PushButton-down-hovering {
+}
+.gwt-PushButton-up-disabled {
+}
+.gwt-PushButton-down-disabled {.html-face}
+
+/* 
+   GWT Radio Button
+------------------------------------------------------------------- */
+.gwt-RadioButton {
+}
+
+/* 
+   GWT Checkbox
+------------------------------------------------------------------- */
+.gwt-CheckBox {
+}
+.gwt-CheckBox-disabled {
+}
+
+
+/* 
+   GWT DatePicker
+------------------------------------------------------------------- */
+.gwt-DatePicker {  width: 17em; padding: .2em .2em 0; font-size: 1.1em;}
+.datePickerMonthSelector {  
+	background: #DDDDDD url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) repeat-x scroll 50% 50%;
+	position:relative; 
+	padding:.2em 0; 
+	margin-bottom: 0px;
+}
+.datePickerMonth { text-align: center; }
+.datePickerPreviousButton { 
+	background: url(images/ui-icons_0073ea_256x240.png);
+	background-position: -80px -192px;
+	height: 15px;
+	width: 9px;  
+}
+.datePickerPreviousButton-up-hovering { 
+	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
+	background-position: -80px -192px;
+	height: 15px;
+	width: 9px;
+}
+.datePickerPreviousButton .html-face {
+	display:none;
+}
+.datePickerNextButton {
+	background: url(images/ui-icons_0073ea_256x240.png); 
+	background-position: -48px -192px;
+	height: 15px;
+	width: 9px;
+}
+.datePickerNextButton-up-hovering {
+	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
+	background-position: -48px -192px;
+	height: 15px;
+	width: 9px;
+}
+.datePickerNextButton .html-face {
+	display:none;
+}
+.datePickerDays { 
+	width: 100%;
+	font-size: .9em;
+	border-collapse: separate;
+	margin:0 0 .4em;
+	border-spacing: 2px;
+}
+.datePickerWeekdayLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }
+.datePickerWeekendLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }
+.datePickerDay {
+	border:0 none;
+	padding:0.5em;
+	background:#F6F6F6 url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) repeat-x scroll 50% 50%;
+	border:1px solid #DDDDDD;
+	color:#0073EA;
+	font-weight:bold;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+}
+.datePickerDayIsToday {  }
+.datePickerDayIsWeekend {  }
+.datePickerDayIsFiller {  }
+.datePickerDayIsValue {  }
+.datePickerDayIsDisabled {  }
+.datePickerDayIsHighlighted {
+	background:#0073EA url(images/ui-bg_highlight-soft_25_0073ea_1x100.png) repeat-x scroll 50% 50%;
+	border:1px solid #0073EA;
+	color:#FFFFFF;
+	font-weight:bold;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium; 
+}
+.datePickerDayIsValueAndHighlighted {
+	background:#FFFFFF url(images/ui-bg_glass_65_ffffff_1x400.png) repeat-x scroll 50% 50%;
+	border:1px solid #DDDDDD;
+	color:#FF0084;
+	font-weight:bold;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+}
+
+/* 
+   GWT Toggle Button
+------------------------------------------------------------------- */
+.gwt-ToggleButton-up
+.gwt-ToggleButton-down
+.gwt-ToggleButton-up-hovering
+.gwt-ToggleButton-down-hovering
+.gwt-ToggleButton-up-disabled
+.gwt-ToggleButton-down-disabled {.html-face}
+
+/* 
+   GWT TextBox
+------------------------------------------------------------------- */
+.gwt-TextBox { primary style }
+.gwt-TextBox-readonly { dependent style set when the text box is read-only }
+
+/* 
+   GWT PasswordTextBox
+------------------------------------------------------------------- */
+.gwt-PasswordTextBox { primary style }
+.gwt-PasswordTextBox-readonly { dependent style set when the password text box is read-only }
+
+/* 
+   GWT TextArea
+------------------------------------------------------------------- */
+.gwt-TextArea { primary style }
+.gwt-TextArea-readonly { dependent style set when the text area is read-only }
+
+/* 
+   GWT HyperLink
+------------------------------------------------------------------- */
+.gwt-Hyperlink { }
+
+/* 
+   GWT ListBox
+------------------------------------------------------------------- */
+.gwt-ListBox { }
+
+/* 
+   GWT MenuBar
+------------------------------------------------------------------- */
+.gwt-MenuBar
+{ the menu bar itself }
+.gwt-MenuBar-horizontal 
+{ dependent style applied to horizontal menu bars }
+.gwt-MenuBar-vertical
+{ dependent style applied to vertical menu bars }
+.gwt-MenuBar .gwt-MenuItem
+{ menu items }
+.gwt-MenuBar .gwt-MenuItem-selected
+{ selected menu items }
+.gwt-MenuBar .gwt-MenuItemSeparator 
+{ section breaks between menu items }
+.gwt-MenuBar .gwt-MenuItemSeparator .menuSeparatorInner
+{ inner component of section separators}
+.gwt-MenuBarPopup .menuPopupTopLeft
+{ the top left cell }
+.gwt-MenuBarPopup .menuPopupTopLeftInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupTopCenter
+{ the top center cell }
+.gwt-MenuBarPopup .menuPopupTopCenterInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupTopRight
+{ the top right cell }
+.gwt-MenuBarPopup .menuPopupTopRightInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupMiddleLeft
+{ the middle left cell }
+.gwt-MenuBarPopup .menuPopupMiddleLeftInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupMiddleCenter
+{ the middle center cell }
+.gwt-MenuBarPopup .menuPopupMiddleCenterInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupMiddleRight
+{ the middle right cell }
+.gwt-MenuBarPopup .menuPopupMiddleRightInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupBottomLeft
+{ the bottom left cell }
+.gwt-MenuBarPopup .menuPopupBottomLeftInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupBottomCenter
+{ the bottom center cell }
+.gwt-MenuBarPopup .menuPopupBottomCenterInner
+{ the inner element of the cell }
+.gwt-MenuBarPopup .menuPopupBottomRight
+{ the bottom right cell }
+.gwt-MenuBarPopup .menuPopupBottomRightInner
+{ the inner element of the cell }
+
+/* 
+   GWT Tree
+------------------------------------------------------------------- */
+
+.gwt-Tree
+{ the tree itself }
+.gwt-Tree .gwt-TreeItem
+{ a tree item }
+.gwt-Tree .gwt-TreeItem-selected
+{ a selected tree item }
+
+/* 
+   GWT SuggestBox
+------------------------------------------------------------------- */
+.gwt-SuggestBox
+{ the suggest box itself }
+.gwt-SuggestBoxPopup
+{ the suggestion popup }
+.gwt-SuggestBoxPopup .item
+{ an unselected suggestion }
+.gwt-SuggestBoxPopup .item-selected
+{ a selected suggestion }
+.gwt-SuggestBoxPopup .suggestPopupTopLeft
+{ the top left cell }
+.gwt-SuggestBoxPopup .suggestPopupTopLeftInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupTopCenter
+{ the top center cell }
+.gwt-SuggestBoxPopup .suggestPopupTopCenterInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupTopRight
+{ the top right cell }
+.gwt-SuggestBoxPopup .suggestPopupTopRightInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupMiddleLeft
+{ the middle left cell }
+.gwt-SuggestBoxPopup .suggestPopupMiddleLeftInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupMiddleCenter
+{ the middle center cell }
+.gwt-SuggestBoxPopup .suggestPopupMiddleCenterInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupMiddleRight
+{ the middle right cell }
+.gwt-SuggestBoxPopup .suggestPopupMiddleRightInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupBottomLeft
+{ the bottom left cell.gwt-RichTextArea }
+.gwt-SuggestBoxPopup .suggestPopupBottomLeftInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupBottomCenter
+{ the bottom center cell }
+.gwt-SuggestBoxPopup .suggestPopupBottomCenterInner
+{ the inner element of the cell }
+.gwt-SuggestBoxPopup .suggestPopupBottomRight
+{ the bottom right cell }
+.gwt-SuggestBoxPopup .suggestPopupBottomRightInner
+{ the inner element of the cell }
+
+/* 
+   GWT RichTextArea
+------------------------------------------------------------------- */
+.gwt-RichTextArea { }
+
+/* 
+   GWT Table
+------------------------------------------------------------------- */
+
+/* 
+   GWT TabBar
+------------------------------------------------------------------- */
+.gwt-TabBar { the tab bar itself }
+.gwt-TabBar .gwt-TabBarFirst { the left edge of the bar }
+.gwt-TabBar .gwt-TabBarFirst-wrapper { table cell around the left edge }
+.gwt-TabBar .gwt-TabBarRest { the right edge of the bar }
+.gwt-TabBar .gwt-TabBarRest-wrapper { table cell around the right edge }
+.gwt-TabBar .gwt-TabBarItem { unselected tabs }
+.gwt-TabBar .gwt-TabBarItem-wrapper { table cell around tab }
+.gwt-TabBar .gwt-TabBarItem-selected { additional style for selected }
+
+/* 
+   GWT DialogBox
+------------------------------------------------------------------- */
+.gwt-DialogBox { the outside of the dialog }
+.gwt-DialogBox .Caption { the caption }
+.gwt-DialogBox .dialogContent { the wrapper around the content }
+.gwt-DialogBox .dialogTopLeft { the top left cell }
+.gwt-DialogBox .dialogTopLeftInner { the inner element of the cell }
+.gwt-DialogBox .dialogTopCenter { the top center cell, where the caption is located }
+.gwt-DialogBox .dialogTopCenterInner { the inner element of the cell }
+.gwt-DialogBox .dialogTopRight { the top right cell }
+.gwt-DialogBox .dialogTopRightInner { the inner element of the cell }
+.gwt-DialogBox .dialogMiddleLeft { the middle left cell }
+.gwt-DialogBox .dialogMiddleLeftInner { the inner element of the cell }
+.gwt-DialogBox .dialogMiddleCenter { the middle center cell, where the content is located }
+.gwt-DialogBox .dialogMiddleCenterInner { the inner element of the cell }
+.gwt-DialogBox .dialogMiddleRight { the middle right cell }
+.gwt-DialogBox .dialogMiddleRightInner { the inner element of the cell }
+.gwt-DialogBox .dialogBottomLeft { the bottom left cell }
+.gwt-DialogBox .dialogBottomLeftInner { the inner element of the cell }
+.gwt-DialogBox .dialogBottomCenter { the bottom center cell }
+.gwt-DialogBox .dialogBottomCenterInner { the inner element of the cell }
+.gwt-DialogBox .dialogBottomRight { the bottom right cell }
+.gwt-DialogBox .dialogBottomRightInner { the inner element of the cell }
+
+/* 
+   GWT Control
+------------------------------------------------------------------- */

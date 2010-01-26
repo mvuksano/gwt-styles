@@ -14,13 +14,13 @@
 
 body, table td, select {
   font-family: Arial Unicode MS, Arial, sans-serif;
-  font-size: 11pt%;
 }
 pre {
   font-family: "courier new", courier;
   font-size: small;
 }
 body {
+  font-size: 10px;
   color: black;
   margin: 0px;
   border: 0px;
@@ -88,44 +88,59 @@ a, a:visited, a:hover {
 /* 
    GWT DatePicker
 ------------------------------------------------------------------- */
-.gwt-DatePicker {  width: 17em; padding: .2em .2em 0; font-size: 1.1em;}
+.gwt-DatePicker { 
+	width: 17em;
+	padding: .2em .2em 0;
+	font-size: 1.1em;
+}
+
 .datePickerMonthSelector {  
 	background: #DDDDDD url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) repeat-x scroll 50% 50%;
 	position:relative; 
 	padding:.2em 0; 
 	margin-bottom: 0px;
 }
-.datePickerMonth { text-align: center; }
+
+.datePickerMonth {
+	text-align: center;
+}
+
 .datePickerPreviousButton { 
 	background: url(images/ui-icons_0073ea_256x240.png);
 	background-position: -80px -192px;
 	height: 15px;
 	width: 9px;  
 }
+
 .datePickerPreviousButton-up-hovering { 
 	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
 	background-position: -80px -192px;
 	height: 15px;
 	width: 9px;
 }
+
 .datePickerPreviousButton .html-face {
 	display:none;
 }
+
 .datePickerNextButton {
 	background: url(images/ui-icons_0073ea_256x240.png); 
 	background-position: -48px -192px;
 	height: 15px;
 	width: 9px;
 }
+
 .datePickerNextButton-up-hovering {
 	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
 	background-position: -48px -192px;
 	height: 15px;
 	width: 9px;
 }
+
 .datePickerNextButton .html-face {
 	display:none;
 }
+
 .datePickerDays { 
 	width: 100%;
 	font-size: .9em;
@@ -133,11 +148,24 @@ a, a:visited, a:hover {
 	margin:0 0 .4em;
 	border-spacing: 2px;
 }
-.datePickerWeekdayLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }
-.datePickerWeekendLabel { padding: .7em .3em; text-align: center; font-weight: bold; border: 0; }
+
+.datePickerWeekdayLabel {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+
+.datePickerWeekendLabel { 
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+
 .datePickerDay {
 	border:0 none;
-	padding:0.5em;
+	padding: 0.3em 0.3em 0.6em 1.4em;
 	background:#F6F6F6 url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) repeat-x scroll 50% 50%;
 	border:1px solid #DDDDDD;
 	color:#0073EA;
@@ -146,10 +174,20 @@ a, a:visited, a:hover {
 	outline-style:none;
 	outline-width:medium;
 }
+
 .datePickerDayIsToday {  }
 .datePickerDayIsWeekend {  }
 .datePickerDayIsFiller {  }
-.datePickerDayIsValue {  }
+.datePickerDayIsValue { 
+	background:#FFFFFF url(images/ui-bg_glass_65_ffffff_1x400.png) repeat-x scroll 50% 50%;
+	border:1px solid #DDDDDD;
+	color:#FF0084;
+	font-weight:bold;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+}
+
 .datePickerDayIsDisabled {  }
 .datePickerDayIsHighlighted {
 	background:#0073EA url(images/ui-bg_highlight-soft_25_0073ea_1x100.png) repeat-x scroll 50% 50%;
@@ -160,6 +198,7 @@ a, a:visited, a:hover {
 	outline-style:none;
 	outline-width:medium; 
 }
+
 .datePickerDayIsValueAndHighlighted {
 	background:#FFFFFF url(images/ui-bg_glass_65_ffffff_1x400.png) repeat-x scroll 50% 50%;
 	border:1px solid #DDDDDD;

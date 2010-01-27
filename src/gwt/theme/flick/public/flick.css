@@ -12,21 +12,18 @@
  *    }
  */
 
-body, table td, select {
-  font-family: Arial Unicode MS, Arial, sans-serif;
-}
-pre {
-  font-family: "courier new", courier;
-  font-size: small;
-}
-body {
+body, table td, select  {
   font-size: 10px;
+  font-family: Arial Unicode MS, Arial, sans-serif;
   color: black;
   margin: 0px;
   border: 0px;
   padding: 0px;
-  background: #fff;
   direction: ltr;
+}
+pre {
+  font-family: "courier new", courier;
+  font-size: small;
 }
 a, a:visited, a:hover {
   color: #0000AA;
@@ -91,7 +88,6 @@ a, a:visited, a:hover {
 .gwt-DatePicker { 
 	width: 17em;
 	padding: .2em .2em 0;
-	font-size: 1.1em;
 }
 
 .datePickerMonthSelector {  
@@ -103,6 +99,7 @@ a, a:visited, a:hover {
 
 .datePickerMonth {
 	text-align: center;
+	font-weight:bold;
 }
 
 .datePickerPreviousButton { 
@@ -143,7 +140,6 @@ a, a:visited, a:hover {
 
 .datePickerDays { 
 	width: 100%;
-	font-size: .9em;
 	border-collapse: separate;
 	margin:0 0 .4em;
 	border-spacing: 2px;
@@ -164,9 +160,9 @@ a, a:visited, a:hover {
 }
 
 .datePickerDay {
-	border:0 none;
-	padding: 0.3em 0.3em 0.6em 1.4em;
+	padding: 0.3em 0.5em 0.3em 0.3em;
 	background:#F6F6F6 url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) repeat-x scroll 50% 50%;
+	text-align: right;
 	border:1px solid #DDDDDD;
 	color:#0073EA;
 	font-weight:bold;

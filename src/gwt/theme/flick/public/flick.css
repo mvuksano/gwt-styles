@@ -88,6 +88,12 @@ a, a:visited, a:hover {
 .gwt-DatePicker { 
 	width: 17em;
 	padding: .2em .2em 0;
+	border: #F6F6F6 1px solid;
+}
+
+.gwt-DatePicker, .gwt-DatePicker table, .gwt-DatePicker td, .gwt-DatePicker div { 
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 .datePickerMonthSelector {  
@@ -103,21 +109,28 @@ a, a:visited, a:hover {
 }
 
 .datePickerPreviousButton { 
-	background: url(images/ui-icons_0073ea_256x240.png);
-	background-position: -80px -192px;
-	height: 15px;
-	width: 9px;  
+	padding: 5px;
 }
 
 .datePickerPreviousButton-up-hovering { 
-	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
-	background-position: -80px -192px;
-	height: 15px;
-	width: 9px;
+	background-color: #0073ea;
+	padding: 5px;
 }
 
 .datePickerPreviousButton .html-face {
 	text-indent: -99999px;
+	height: 17px;
+	width: 17px;
+	background: url(images/ui-icons_0073ea_256x240.png);
+	background-position: -80px -192px;
+}
+
+.datePickerPreviousButton-up-hovering .html-face {
+	text-indent: -99999px;
+	height: 17px;
+	width: 17px;
+	background: url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
+	background-position: -80px -192px;
 }
 
 .datePickerNextButton {

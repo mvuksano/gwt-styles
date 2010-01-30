@@ -189,6 +189,9 @@ input,select,textarea{
 }
 
 .datePickerDayIsDisabled {
+	background:#FFFFFF url(images/ui-bg_flat_55_ffffff_40x100.png) repeat-x scroll 50% 50%;
+	border:1px solid #CCCCCC;
+	color:#DDDDDD; 
 }
 
 .datePickerDayIsHighlighted {

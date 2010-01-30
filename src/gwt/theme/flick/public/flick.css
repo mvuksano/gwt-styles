@@ -28,6 +28,9 @@ pre {
 a, a:visited, a:hover {
   color: #0000AA;
 }
+input,select,textarea{
+    outline:none;	
+}
 
 /**
  * The reference theme can be used to determine when this style sheet has
@@ -88,19 +91,19 @@ a, a:visited, a:hover {
 .gwt-DatePicker { 
 	width: 17em;
 	padding: .2em .2em 0;
-	border: #F6F6F6 1px solid;
+	border: 1px solid #DDDDDD;
 }
 
 .gwt-DatePicker, .gwt-DatePicker table, .gwt-DatePicker td, .gwt-DatePicker div { 
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	outline-color:-moz-use-text-color !important;
+	outline-style:none !important;
+	outline-width:0 !important;
 }
 
 .datePickerMonthSelector {  
 	background: #DDDDDD url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) repeat-x scroll 50% 50%;
-	position:relative; 
-	padding:.2em 0; 
-	margin-bottom: 0px;
 }
 
 .datePickerMonth {
@@ -108,52 +111,37 @@ a, a:visited, a:hover {
 	font-weight:bold;
 }
 
-.datePickerPreviousButton { 
+.datePickerPreviousButton, .datePickerNextButton { 
 	padding: 5px;
 }
 
-.datePickerPreviousButton-up-hovering { 
+.datePickerPreviousButton-up-hovering, .datePickerNextButton-up-hovering { 
 	background-color: #0073ea;
 	padding: 5px;
 }
 
-.datePickerPreviousButton .html-face {
+.datePickerPreviousButton .html-face, .datePickerNextButton .html-face, .datePickerPreviousButton-up-hovering .html-face, .datePickerNextButton-up-hovering .html-face {
 	text-indent: -99999px;
 	height: 17px;
 	width: 17px;
+} 
+
+.datePickerPreviousButton .html-face {
 	background: url(images/ui-icons_0073ea_256x240.png);
 	background-position: -80px -192px;
 }
 
 .datePickerPreviousButton-up-hovering .html-face {
-	text-indent: -99999px;
-	height: 17px;
-	width: 17px;
-	background: url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
+	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
 	background-position: -80px -192px;
 }
 
-.datePickerNextButton {
-	padding: 5px;
-}
-
-.datePickerNextButton-up-hovering {
-	background-color: #0073ea;
-	padding: 5px;
-}
-
 .datePickerNextButton .html-face {
-	text-indent: -99999px;
-	height: 17px;
-	width: 17px;
 	background: url(images/ui-icons_0073ea_256x240.png); 
 	background-position: -48px -192px;
 }
 
 .datePickerNextButton-up-hovering .html-face {
-	text-indent: -99999px;
-	height: 17px;
-	width: 17px;
 	background: #0073ea url(images/ui-icons_ffffff_256x240.png) 50% 50% repeat-x; 
 	background-position: -48px -192px;
 }
@@ -165,14 +153,7 @@ a, a:visited, a:hover {
 	border-spacing: 2px;
 }
 
-.datePickerWeekdayLabel {
-	padding: .7em .3em;
-	text-align: center;
-	font-weight: bold;
-	border: 0;
-}
-
-.datePickerWeekendLabel { 
+.datePickerWeekdayLabel, .datePickerWeekendLabel {
 	padding: .7em .3em;
 	text-align: center;
 	font-weight: bold;
@@ -186,43 +167,40 @@ a, a:visited, a:hover {
 	border:1px solid #DDDDDD;
 	color:#0073EA;
 	font-weight:bold;
-	outline-color:-moz-use-text-color;
-	outline-style:none;
-	outline-width:medium;
 }
 
-.datePickerDayIsToday {  }
-.datePickerDayIsWeekend {  }
-.datePickerDayIsFiller {  }
+.datePickerDayIsToday {
+	background:#FFFFFF url(images/ui-bg_flat_55_ffffff_40x100.png) repeat-x scroll 50% 50%;
+	border:1px solid #CCCCCC;
+	color:#444444; 
+}
+
+.datePickerDayIsWeekend {
+}
+
+.datePickerDayIsFiller { 
+	color: #DDDDDD;
+}
+
 .datePickerDayIsValue { 
 	background:#FFFFFF url(images/ui-bg_glass_65_ffffff_1x400.png) repeat-x scroll 50% 50%;
 	border:1px solid #DDDDDD;
 	color:#FF0084;
-	font-weight:bold;
-	outline-color:-moz-use-text-color;
-	outline-style:none;
-	outline-width:medium;
 }
 
-.datePickerDayIsDisabled {  }
+.datePickerDayIsDisabled {
+}
+
 .datePickerDayIsHighlighted {
 	background:#0073EA url(images/ui-bg_highlight-soft_25_0073ea_1x100.png) repeat-x scroll 50% 50%;
 	border:1px solid #0073EA;
 	color:#FFFFFF;
-	font-weight:bold;
-	outline-color:-moz-use-text-color;
-	outline-style:none;
-	outline-width:medium; 
 }
 
 .datePickerDayIsValueAndHighlighted {
 	background:#FFFFFF url(images/ui-bg_glass_65_ffffff_1x400.png) repeat-x scroll 50% 50%;
 	border:1px solid #DDDDDD;
 	color:#FF0084;
-	font-weight:bold;
-	outline-color:-moz-use-text-color;
-	outline-style:none;
-	outline-width:medium;
 }
 
 /* 

@@ -404,5 +404,56 @@ input,select,textarea{
 .gwt-DialogBox .dialogBottomRightInner { the inner element of the cell }
 
 /* 
-   GWT Control
+   GWT StackPanel
 ------------------------------------------------------------------- */
+.gwt-StackPanel {
+	width: 100%;
+	font-weight:bold;
+}
+
+.gwt-StackPanel div {
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	outline-color:-moz-use-text-color !important;
+	outline-style:none !important;
+	outline-width:0 !important; 
+}
+
+.gwt-StackPanel .gwt-StackPanelItem {
+	color:#0073EA;
+}
+
+.gwt-StackPanel .gwt-StackPanelItem div {
+	border:1px solid #DDDDDD;
+	margin:0.5em 0.5em 0.5em 2.2em;
+	padding:0.5em 0.5em 0.5em 2.2em;
+	border:1px solid #DDDDDD;
+	
+}
+.gwt-StackPanel .gwt-StackPanelItem-selected {
+	color:#FF0084;
+}
+.gwt-StackPanel .gwt-StackPanelItem-selected div {
+	margin:0.5em 0.5em 0em 2.2em;
+	padding:0.5em 0.5em 0.5em 2.	border-top: 0px none;
+	border:1px solid #DDDDDD;
+	border-bottom: 0px;
+	border-radius-bottomleft: 0px;
+	border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+	
+}
+.gwt-StackPanel .gwt-StackPanelContent {
+	color:#444444;
+}
+.gwt-StackPanel .gwt-StackPanelContent .gwt-Label {
+	margin: 0em 0.5em 0.5em 2.2em;
+	padding: 0.5em 0.5em 0.5em 2.2em;
+	border:1px solid #DDDDDD;
+	border-top: 0px none;
+	border-radius-topleft: 0px;
+	border-radius-topright: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+}

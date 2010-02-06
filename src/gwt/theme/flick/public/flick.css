@@ -12,7 +12,7 @@
  *    }
  */
 
-body, table td, select  {
+body, table td, select, button  {
   font-size: 10px;
   font-family: Arial Unicode MS, Arial, sans-serif;
   color: black;
@@ -52,6 +52,35 @@ input,select,textarea{
    GWT Button
 ------------------------------------------------------------------- */
 .gwt-Button {
+	background:#F6F6F6 url(images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) repeat-x scroll 50% 50%;
+	border:1px solid #DDDDDD;
+	color:#0073EA;
+	font-weight:bold;
+	padding: 0.4em 1em 0.4em 1em;
+	height: 2.5em;
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.gwt-Button:active {
+}
+
+.gwt-Button:hover {
+  border: 1px solid #0073ea;
+  background: #0073ea url(images/ui-bg_highlight-soft_25_0073ea_1x100.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #ffffff;
+  outline: none;
+}
+
+.gwt-Button[disabled] {
+  cursor: default;
+  color: #888;
+}
+
+.gwt-Button[disabled]:hover {
 }
 
 /* 

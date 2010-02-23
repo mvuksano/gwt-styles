@@ -128,6 +128,15 @@ input,select,textarea{
 .gwt-PushButton-down-disabled {.html-face}
 
 /* 
+   GWT PopupPanel Glass
+------------------------------------------------------------------- */
+.gwt-PopupPanelGlass {
+  background-color: #000;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+/* 
    GWT Toggle Button
 ------------------------------------------------------------------- */
 .gwt-ToggleButton {
@@ -350,14 +359,33 @@ input,select,textarea{
 ------------------------------------------------------------------- */
 .gwt-MenuBar
 { the menu bar itself }
-.gwt-MenuBar-horizontal 
-{ dependent style applied to horizontal menu bars }
+.gwt-MenuBar-horizontal {
+	background:url("images/ui-bg_highlight-soft_50_dddddd_1x100.png") repeat-x scroll 50% 50% #DDDDDD;
+	border:1px solid #DDDDDD;
+	border-bottom: none;
+	color:#444444;
+	font-weight:bold;
+}
+.gwt-MenuBar-horizontal table {
+	border-spacing: 0px;
+}
 .gwt-MenuBar-vertical
 { dependent style applied to vertical menu bars }
-.gwt-MenuBar .gwt-MenuItem
-{ menu items }
-.gwt-MenuBar .gwt-MenuItem-selected
-{ selected menu items }
+.gwt-MenuBar .gwt-MenuItem {
+	background:url("images/ui-bg_highlight-soft_100_f6f6f6_1x100.png") repeat-x scroll 50% 50% #F6F6F6;
+	border:1px solid #DDDDDD;
+	color:#0073EA;
+	font-weight:bold;
+	padding: 0.5em 1em;
+	outline:medium none;
+}
+.gwt-MenuBar .gwt-MenuItem-selected {
+	background:url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #F6F6F6;
+	border:1px solid #DDDDDD;
+	border-bottom: none;
+	padding-top: 0.4em;
+	color: #FF0084;
+}
 .gwt-MenuBar .gwt-MenuItemSeparator 
 { section breaks between menu items }
 .gwt-MenuBar .gwt-MenuItemSeparator .menuSeparatorInner
@@ -461,7 +489,71 @@ input,select,textarea{
 /* 
    GWT RichTextArea
 ------------------------------------------------------------------- */
-.gwt-RichTextArea { }
+.gwt-RichTextArea {
+	font-family: Arial Unicode MS, Arial, sans-serif;
+	font-size: 10px;
+	width: 100%; 
+	border: none;
+	background-color: #ffffff;
+}
+
+.hasRichTextToolbar {
+  border: 0px;
+}
+.gwt-RichTextToolbar {
+}
+.gwt-RichTextToolbar .gwt-PushButton-up {
+  padding: 0px 1px 0px 0px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border-width: 1px; 
+}
+.gwt-RichTextToolbar .gwt-PushButton-up-hovering {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0px 1px 0px 0px;
+  border-width: 1px; 
+}
+.gwt-RichTextToolbar .gwt-PushButton-down {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0px 0px 0px 1px;
+  border-width: 1px; 
+}
+.gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0px 0px 0px 1px;
+  border-width: 1px; 
+}
+.gwt-RichTextToolbar .gwt-ToggleButton-up {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0px 1px 0px 0px;
+  border-width: 1px;
+}
+.gwt-RichTextToolbar .gwt-ToggleButton-up-hovering {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0px 1px 0px 0px;
+  border-width: 1px;
+}
+.gwt-RichTextToolbar .gwt-ToggleButton-down {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0px 0px 0px 1px;
+  border-width: 1px;
+}
+.gwt-RichTextToolbar .gwt-ToggleButton-down-hovering {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 0px 0px 0px 1px;
+  border-width: 1px;
+}
+.cw-RichText {
+  border: 1px solid #BBBBBB;
+  border-spacing: 0px;
+}
 
 /* 
    GWT Table
@@ -482,27 +574,41 @@ input,select,textarea{
 /* 
    GWT DialogBox
 ------------------------------------------------------------------- */
-.gwt-DialogBox { the outside of the dialog }
-.gwt-DialogBox .Caption { the caption }
-.gwt-DialogBox .dialogContent { the wrapper around the content }
-.gwt-DialogBox .dialogTopLeft { the top left cell }
-.gwt-DialogBox .dialogTopLeftInner { the inner element of the cell }
-.gwt-DialogBox .dialogTopCenter { the top center cell, where the caption is located }
-.gwt-DialogBox .dialogTopCenterInner { the inner element of the cell }
-.gwt-DialogBox .dialogTopRight { the top right cell }
-.gwt-DialogBox .dialogTopRightInner { the inner element of the cell }
-.gwt-DialogBox .dialogMiddleLeft { the middle left cell }
-.gwt-DialogBox .dialogMiddleLeftInner { the inner element of the cell }
-.gwt-DialogBox .dialogMiddleCenter { the middle center cell, where the content is located }
-.gwt-DialogBox .dialogMiddleCenterInner { the inner element of the cell }
-.gwt-DialogBox .dialogMiddleRight { the middle right cell }
-.gwt-DialogBox .dialogMiddleRightInner { the inner element of the cell }
-.gwt-DialogBox .dialogBottomLeft { the bottom left cell }
-.gwt-DialogBox .dialogBottomLeftInner { the inner element of the cell }
-.gwt-DialogBox .dialogBottomCenter { the bottom center cell }
-.gwt-DialogBox .dialogBottomCenterInner { the inner element of the cell }
-.gwt-DialogBox .dialogBottomRight { the bottom right cell }
-.gwt-DialogBox .dialogBottomRightInner { the inner element of the cell }
+.gwt-DialogBox {
+	border: 1px solid #DDDDDD;
+	-moz-border-radius:4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	background-color:#FFFFFF;
+	padding:8px;
+}
+.gwt-DialogBox .Caption {
+	background-color: #dddddd;
+	padding: 4px 4px 4px 4px;
+	border: 1px solid #dddddd;
+	color:#444444;
+	font-weight:bold; 
+	-moz-border-radius:4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+.gwt-DialogBox .dialogContent { }
+.gwt-DialogBox .dialogTopLeft { }
+.gwt-DialogBox .dialogTopLeftInner { }
+.gwt-DialogBox .dialogTopCenter { }
+.gwt-DialogBox .dialogTopCenterInner { }
+.gwt-DialogBox .dialogTopRight { }
+.gwt-DialogBox .dialogTopRightInner { }
+.gwt-DialogBox .dialogMiddleLeft { }
+.gwt-DialogBox .dialogMiddleLeftInner { }
+.gwt-DialogBox .dialogMiddleCenter { }
+.gwt-DialogBox .dialogMiddleCenterInner { }
+.gwt-DialogBox .dialogMiddleRight { }
+.gwt-DialogBox .dialogMiddleRightInner { }
+.gwt-DialogBox .dialogBottomLeft { }
+.gwt-DialogBox .dialogBottomLeftInner { }
+.gwt-DialogBox .dialogBottomCenter { }
+.gwt-DialogBox .dialogBottomCenterInner { }
+.gwt-DialogBox .dialogBottomRight { }
+.gwt-DialogBox .dialogBottomRightInner { }
 
 /* 
    GWT StackPanel

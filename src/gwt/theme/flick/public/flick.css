@@ -367,8 +367,8 @@ input,select,textarea{
 /* 
    GWT MenuBar
 ------------------------------------------------------------------- */
-.gwt-MenuBar
-{ the menu bar itself }
+.gwt-MenuBar {
+}
 .gwt-MenuBar-horizontal {
 	background:url("images/ui-bg_highlight-soft_50_dddddd_1x100.png") repeat-x scroll 50% 50% #DDDDDD;
 	border:1px solid #DDDDDD;
@@ -379,9 +379,18 @@ input,select,textarea{
 .gwt-MenuBar-horizontal table {
 	border-spacing: 0px;
 }
-.gwt-MenuBar-vertical
-{ dependent style applied to vertical menu bars }
+.gwt-MenuBar-vertical {
+	border:1px solid #DDDDDD;
+}
+.gwt-MenuBar-vertical table {
+	width: 100%;
+}
 .gwt-MenuBar .gwt-MenuItem {
+	color:#0073EA;
+	font-weight:bold;
+	padding: 0.5em 1em;
+}
+.gwt-MenuBar-horizontal .gwt-MenuItem {
 	background:url("images/ui-bg_highlight-soft_100_f6f6f6_1x100.png") repeat-x scroll 50% 50% #F6F6F6;
 	border:1px solid #DDDDDD;
 	color:#0073EA;
@@ -389,53 +398,65 @@ input,select,textarea{
 	padding: 0.5em 1em;
 	outline:medium none;
 }
-.gwt-MenuBar .gwt-MenuItem-selected {
+.gwt-MenuBar-vertical .gwt-MenuItem {
+	background: url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #F6F6F6;
+	border: none;
+}
+.gwt-MenuBar-horizontal .gwt-MenuItem-selected {
 	background:url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #F6F6F6;
-	border:1px solid #DDDDDD;
-	border-bottom: none;
-	padding-top: 0.4em;
 	color: #FF0084;
 }
-.gwt-MenuBar .gwt-MenuItemSeparator 
-{ section breaks between menu items }
-.gwt-MenuBar .gwt-MenuItemSeparator .menuSeparatorInner
-{ inner component of section separators}
-.gwt-MenuBarPopup .menuPopupTopLeft
-{ the top left cell }
-.gwt-MenuBarPopup .menuPopupTopLeftInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupTopCenter
-{ the top center cell }
-.gwt-MenuBarPopup .menuPopupTopCenterInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupTopRight
-{ the top right cell }
-.gwt-MenuBarPopup .menuPopupTopRightInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupMiddleLeft
-{ the middle left cell }
-.gwt-MenuBarPopup .menuPopupMiddleLeftInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupMiddleCenter
-{ the middle center cell }
-.gwt-MenuBarPopup .menuPopupMiddleCenterInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupMiddleRight
-{ the middle right cell }
-.gwt-MenuBarPopup .menuPopupMiddleRightInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupBottomLeft
-{ the bottom left cell }
-.gwt-MenuBarPopup .menuPopupBottomLeftInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupBottomCenter
-{ the bottom center cell }
-.gwt-MenuBarPopup .menuPopupBottomCenterInner
-{ the inner element of the cell }
-.gwt-MenuBarPopup .menuPopupBottomRight
-{ the bottom right cell }
-.gwt-MenuBarPopup .menuPopupBottomRightInner
-{ the inner element of the cell }
+.gwt-MenuBar-vertical .gwt-MenuItem-selected {
+	background:url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #F6F6F6;
+	color: #FF0084;
+}
+.gwt-MenuBar .gwt-MenuItemSeparator {
+}
+.gwt-MenuBar .gwt-MenuItemSeparator .menuSeparatorInner {
+}
+.gwt-MenuBarPopup {
+	min-width: 100px;
+}
+.gwt-MenuBarPopup table {
+	width: 100%;
+}
+.gwt-MenuBarPopup .menuPopupTopLeft { 
+}
+.gwt-MenuBarPopup .menuPopupTopLeftInner {
+}
+.gwt-MenuBarPopup .menuPopupTopCenter {
+}
+.gwt-MenuBarPopup .menuPopupTopCenterInner {
+}
+.gwt-MenuBarPopup .menuPopupTopRight {
+}
+.gwt-MenuBarPopup .menuPopupTopRightInner {
+}
+.gwt-MenuBarPopup .menuPopupMiddleLeft {
+}
+.gwt-MenuBarPopup .menuPopupMiddleLeftInner {
+}
+.gwt-MenuBarPopup .menuPopupMiddleCenter {
+	min-width: 100px;
+}
+.gwt-MenuBarPopup .menuPopupMiddleCenterInner {
+}
+.gwt-MenuBarPopup .menuPopupMiddleRight {
+}
+.gwt-MenuBarPopup .menuPopupMiddleRightInner {
+}
+.gwt-MenuBarPopup .menuPopupBottomLeft {
+}
+.gwt-MenuBarPopup .menuPopupBottomLeftInner {
+}
+.gwt-MenuBarPopup .menuPopupBottomCenter {
+}
+.gwt-MenuBarPopup .menuPopupBottomCenterInner {
+}
+.gwt-MenuBarPopup .menuPopupBottomRight {
+}
+.gwt-MenuBarPopup .menuPopupBottomRightInner {
+}
 
 /* 
    GWT Tree

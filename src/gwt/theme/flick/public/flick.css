@@ -47,10 +47,6 @@ input,select,textarea{
 }
 
 /* 
-   GWT Panels
-------------------------------------------------------------------- */
-
-/* 
    GWT Button
 ------------------------------------------------------------------- */
 .gwt-Button {
@@ -192,6 +188,9 @@ input,select,textarea{
 ------------------------------------------------------------------- */
 .gwt-RadioButton {
 }
+.gwt-RadioButton-disabled {
+	color: ##888888;
+}
 
 /* 
    GWT Checkbox
@@ -199,6 +198,7 @@ input,select,textarea{
 .gwt-CheckBox {
 }
 .gwt-CheckBox-disabled {
+	color: ##888888;
 }
 
 
@@ -322,16 +322,6 @@ input,select,textarea{
 	border:1px solid #DDDDDD;
 	color:#FF0084;
 }
-
-/* 
-   GWT Toggle Button
-------------------------------------------------------------------- */
-.gwt-ToggleButton-up
-.gwt-ToggleButton-down
-.gwt-ToggleButton-up-hovering
-.gwt-ToggleButton-down-hovering
-.gwt-ToggleButton-up-disabled
-.gwt-ToggleButton-down-disabled {.html-face}
 
 /* 
    GWT TextBox, GWT Password TextBox, GWT TextArea

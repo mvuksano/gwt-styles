@@ -44,4 +44,9 @@
 		<delete dir="${temp}"/>
 	</target>
 
+	<target name="dist" depends="jar" description="Create tar and zip files that contain jar">
+		<tar basedir="${build}" destfile="${dist}/${module.name}.tar.bz2" compression="bzip2" />
+		<zip basedir="${build}" destfile="${dist}/${module.name}.zip" compress="true" />
+	</target>
+
 </project>

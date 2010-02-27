@@ -389,7 +389,7 @@ input,select,textarea{
 	outline:medium none;
 }
 .gwt-MenuBar-vertical .gwt-MenuItem {
-	background: url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #ffffff;
+	background: url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #F6F6F6;
 	border: none;
 }
 .gwt-MenuBar-horizontal .gwt-MenuItem-selected {
@@ -397,7 +397,7 @@ input,select,textarea{
 	color: #FF0084;
 }
 .gwt-MenuBar-vertical .gwt-MenuItem-selected {
-	background:url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #ffffff;
+	background:url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x scroll 50% 50% #F6F6F6;
 	color: #FF0084;
 }
 .gwt-MenuBar .gwt-MenuItemSeparator {

@@ -75,6 +75,9 @@ input,select,textarea{
 .gwt-Button[disabled] {
   cursor: default;
   color: #888;
+  opacity: .5;
+  filter: alpha(opacity=40);
+  zoom: 1;
 }
 
 .gwt-Button[disabled]:hover {
@@ -110,6 +113,9 @@ input,select,textarea{
 }
 
 .gwt-PushButton-up-disabled {
+	opacity: .5;
+  	filter: alpha(opacity=40);
+  	zoom: 1;
 }
 
 .gwt-PushButton-down,
@@ -125,7 +131,11 @@ input,select,textarea{
 }
 .gwt-PushButton-down-hovering {
 }
-.gwt-PushButton-down-disabled {.html-face}
+.gwt-PushButton-down-disabled {
+	opacity: .5;
+  	filter: alpha(opacity=40);
+  	zoom: 1;
+}
 
 /* 
    GWT PopupPanel Glass
@@ -166,6 +176,9 @@ input,select,textarea{
 }
 
 .gwt-ToggleButton-up-disabled {
+	opacity: .5;
+  	filter: alpha(opacity=40);
+  	zoom: 1;
 }
 
 .gwt-ToggleButton-down,
@@ -181,7 +194,11 @@ input,select,textarea{
 }
 .gwt-ToggleButton-down-hovering {
 }
-.gwt-ToggleButton-down-disabled {.html-face}
+.gwt-ToggleButton-down-disabled {
+	opacity: .5;
+  	filter: alpha(opacity=40);
+  	zoom: 1;
+}
 
 /* 
    GWT Radio Button
@@ -591,6 +608,52 @@ input,select,textarea{
 .gwt-TabBar .gwt-TabBarItem { unselected tabs }
 .gwt-TabBar .gwt-TabBarItem-wrapper { table cell around tab }
 .gwt-TabBar .gwt-TabBarItem-selected { additional style for selected }
+
+/*
+   GWT DecoratorPanel
+------------------------------------------------------------------- */
+.gwt-DecoratorPanel {
+}
+.gwt-DecoratorPanel .topCenter,
+.gwt-DecoratorPanel .bottomCenter {
+  background: url(images/hborder.png) repeat-x;
+}
+.gwt-DecoratorPanel .middleLeft,
+.gwt-DecoratorPanel .middleRight {
+  background: url(images/vborder.png) repeat-y;
+}
+.gwt-DecoratorPanel .topLeftInner,
+.gwt-DecoratorPanel .topRightInner,
+.gwt-DecoratorPanel .bottomLeftInner,
+.gwt-DecoratorPanel .bottomRightInner {
+  width: 5px;
+  height: 5px;
+  zoom: 1;
+}
+.gwt-DecoratorPanel .topLeft {
+  background: url(images/corner.png) no-repeat 0px 0px;
+  -background: url(images/corner_ie6.png) no-repeat 0px 0px;
+}
+.gwt-DecoratorPanel .topRight {
+  background: url(images/corner.png) no-repeat -5px 0px;
+  -background: url(images/corner_ie6.png) no-repeat -5px 0px;
+}
+.gwt-DecoratorPanel .bottomLeft {
+  background: url(images/corner.png) no-repeat 0px -5px;
+  -background: url(images/corner_ie6.png) no-repeat 0px -5px;
+}
+.gwt-DecoratorPanel .bottomRight {
+  background: url(images/corner.png) no-repeat -5px -5px;
+  -background: url(images/corner_ie6.png) no-repeat -5px -5px;
+}
+* html .gwt-DecoratorPanel .topLeftInner,
+* html .gwt-DecoratorPanel .topRightInner,
+* html .gwt-DecoratorPanel .bottomLeftInner,
+* html .gwt-DecoratorPanel .bottomRightInner {
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+}
 
 /* 
    GWT DialogBox

@@ -13,7 +13,7 @@
  */
 
 body, table td, select, button  {
-  font-size: 10px;
+  font-size: 12px;
   color: black;
   margin: 0px;
   border: 0px;
@@ -479,50 +479,62 @@ input,select,textarea{
 /* 
    GWT SuggestBox
 ------------------------------------------------------------------- */
-.gwt-SuggestBox
-{ the suggest box itself }
-.gwt-SuggestBoxPopup
-{ the suggestion popup }
-.gwt-SuggestBoxPopup .item
-{ an unselected suggestion }
-.gwt-SuggestBoxPopup .item-selected
-{ a selected suggestion }
+.gwt-SuggestBox {
+	padding-left: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #DDDDDD;
+}
+.gwt-SuggestBoxPopup {
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: 1px solid #DDDDDD;
+}
+.gwt-SuggestBoxPopup .item {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.gwt-SuggestBoxPopup .item-selected {
+	background-color:#0073EA;
+}
 .gwt-SuggestBoxPopup .suggestPopupTopLeft
-{ the top left cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupTopLeftInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupTopCenter
-{ the top center cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupTopCenterInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupTopRight
-{ the top right cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupTopRightInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupMiddleLeft
-{ the middle left cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupMiddleLeftInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupMiddleCenter
-{ the middle center cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupMiddleCenterInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupMiddleRight
-{ the middle right cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupMiddleRightInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupBottomLeft
-{ the bottom left cell.gwt-RichTextArea }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupBottomLeftInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupBottomCenter
-{ the bottom center cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupBottomCenterInner
-{ the inner element of the cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupBottomRight
-{ the bottom right cell }
+{ }
 .gwt-SuggestBoxPopup .suggestPopupBottomRightInner
-{ the inner element of the cell }
+{ }
 
 /* 
    GWT RichTextArea
